@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Affairs</title>
+  <style>
+    body {
+      background:#f0f8ff;
+      margin:0;
+      text-align:center;
+      font-family:Arial, sans-serif;
+    }
+    .topbar {
+      display:flex;
+      align-items:center;
+      background:#fff;
+      padding:10px;
+      border-bottom:1px solid #ccc;
+    }
+    .back-btn {
+      font-size:20px;
+      cursor:pointer;
+      margin-right:10px;
+    }
+    .banner {
+      margin:15px auto;
+    }
+    .content {
+      margin:20px auto;
+    }
+    .next-btn {
+      padding:10px 20px;
+      font-size:16px;
+      cursor:pointer;
+      background:#007bff;
+      color:white;
+      border:none;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔙 Back Button + Top Bar -->
+  <div class="topbar">
+    <span class="back-btn" onclick="window.location.href='currentscreen.html'">🔙</span>
+    <h3 style="margin:0; flex:1;">Current Affairs</h3>
+  </div>
+
+  <!-- 🔼 Top Banner Ad -->
+  <div class="banner">
+    <script type="text/javascript" src="YOUR_TOP_BANNER_AD.js"></script>
+  </div>
+
+  <!-- 📌 Today Current Affairs Image -->
+  <div class="content">
+    <h2>Today's Current Affairs</h2>
+    <img src="today.png" alt="Today Current Affairs" style="max-width:90%; border:2px solid #000;"/>
+  </div>
+
+  <!-- 🔽 Bottom Banner Ad -->
+  <div class="banner">
+    <script type="text/javascript" src="YOUR_BOTTOM_BANNER_AD.js"></script>
+  </div>
+
+  <!-- ▶️ Next Button -->
+  <div style="margin:20px;">
+    <button class="next-btn" onclick="showAdAndGo()">Next Page</button>
+  </div>
+
+  <!-- ✅ Popunder Script (PropellerAds) -->
+  <script async="async" data-cfasync="false" src="//upgulpinon.com/abcd1234.js"></script>
+
+  <script>
+    // जब user Next दबाए → पहले ad trigger होगा फिर next page खुलेगा
+    function showAdAndGo() {
+      alert("Rewarded / Popunder Ad Here...");
+      window.location.href = "page2.html";
+    }
+  </script>
+
+</body>
+  </html>
